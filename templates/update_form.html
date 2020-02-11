@@ -1,0 +1,14 @@
+<form name="add" method="post">
+        {% csrf_token %}
+    <p><b>Phone number:</b><br>
+        <input type="text" name="phone_number" value="{{ phone_number }}">
+    </p>
+        <p><b>Full name:</b><br>
+        <input type="text" name="fullname" value="{{ fullname }}">
+    </p>
+        <p><b>Position:</b><br>
+        <input type="text" name="position" value="{{ position }}">
+    </p>
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+ </form>

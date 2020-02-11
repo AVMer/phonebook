@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+</head>
+<body>
+    <table align="center" border="1">
+        <tr>
+            <td>Phone number</td>
+            <td>Full name</td>
+            <td>Position</td>
+        </tr>
+        {% for item in entries %}
+            <tr>
+                <td><div>{{item.phone_number}}</div></td>
+                <td><div>{{item.fullname}}</div></td>
+                <td><div>{{item.position}}</div></td>
+                <td>
+                    <form action="/update/{{ item.pk }}/" method="get">
+                        {% csrf_token %}
+                        <input type=submit class="btn" value="Update" />
+                    </form>
+                </td>
+                <td>
+                    <form action="/delete/{{ item.pk }}/" method="post">
+                        {% csrf_token %}
+                        <input type=submit class="btn" value="Delete" />
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <form name="add" method="post">
+        {% csrf_token %}
+    <p><b>Phone number:</b><br>
+        <input type="text" name="phone_number">
+    </p>
+        <p><b>Full name:</b><br>
+        <input type="text" name="fullname">
+    </p>
+        <p><b>Position:</b><br>
+        <input type="text" name="position">
+    </p>
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+ </form>
+</body>
+</html>
