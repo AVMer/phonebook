@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1e264b-4563-4a63-9271-c1f5e3393f5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="phonebook" type="Python.DjangoServer" factoryName="Django server">
       <module name="phonebook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,6 +67,20 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
   </component>
@@ -95,7 +113,11 @@
       <workItem from="1575724646557" duration="847000" />
       <workItem from="1575924291479" duration="2311000" />
       <workItem from="1581423591832" duration="1197000" />
-      <workItem from="1581454031249" duration="1429000" />
+      <workItem from="1581454031249" duration="3395000" />
+      <workItem from="1581476558929" duration="501000" />
+      <workItem from="1581477164909" duration="1409000" />
+      <workItem from="1583835685440" duration="206000" />
+      <workItem from="1583835916666" duration="18313000" />
     </task>
     <servers />
   </component>
@@ -103,33 +125,58 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1581455105934">
+    <state x="429" y="23" width="582" height="805" key="#Dockerfile" timestamp="1583836762038">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581455105934" />
+    <state x="429" y="23" width="582" height="805" key="#Dockerfile/0.0.1440.900@0.0.1440.900" timestamp="1583836762038" />
+    <state x="320" y="115" key="#Inspections" timestamp="1583840422875">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1583840422875" />
+    <state x="320" y="115" key="#Notifications" timestamp="1583835707418">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1583835707418" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583840375859">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1583840375859" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1581476553528">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581476553528" />
     <state width="1358" height="193" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1581425676148" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1581455105931">
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1581476553523">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581455105931" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581476553523" />
     <state width="1358" height="193" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1581425676147" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1581455105930">
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1581476553522">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581455105930" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581476553522" />
     <state width="1358" height="193" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1581425676146" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1581455105933">
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1581476553527">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581455105933" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581476553527" />
     <state width="1358" height="193" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1581425676148" />
     <state x="229" y="64" key="SettingsEditor" timestamp="1575924346768">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state x="229" y="64" key="SettingsEditor/0.23.1440.805@0.23.1440.805" timestamp="1575924346768" />
-    <state x="399" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1581423594550">
-      <screen x="0" y="23" width="1440" height="805" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1583913860311">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583913860311" />
+    <state x="481" y="186" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1583837072300">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="481" y="186" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.0.1440.900@0.0.1440.900" timestamp="1583837072300" />
+    <state x="399" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1583835918046">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="399" y="263" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1583835918046" />
     <state x="399" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.805@0.23.1440.805" timestamp="1581423594550" />
   </component>
 </project>

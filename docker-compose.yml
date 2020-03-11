@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+ db:
+   image: postgres:latest
+   expose:
+     - "5432"
+   environment:
+     POSTGRES_PASSWORD: s3cr3t
+     POSTGRES_DB: phonebook
+ web:
+   build: .
+   command: bash -c "python manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+   volumes:
+     - .:/phonebook
+   ports:
+     - "8000:8000"
+   depends_on:
+     - db
+volumes:
+  postgres_data:
